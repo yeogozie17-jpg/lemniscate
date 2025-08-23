@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portofolio.css">
+    <title>Document</title>
+</head>
+<body>
+     <header class="header">
+        <ul>
+            <li><a href="index.html">acceuil</a></li>
+            <li><a href="citation_islam.html">citation & islam</a></li>
+            <li><a href="portofolio.html">actualites</a></li>
+           
+        </ul>
+    </header>
+
+    <div class="rectangle">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+  </div>
+
+
+
+  <section class="actualites">
+  <h2> Actualités</h2>
+  <p class="intro">Retrouvez ici toutes les nouvelles et événements récents.</p>
+
+  <!-- Barre de recherche -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Rechercher une actualité...">
+  </div>
+
+  <!-- Grille d'actualités -->
+  <div class="news-grid" id="newsGrid">
+    <article class="news-card">
+      <img src="islam.png" alt="Lancement app">
+      <div class="news-content">
+        <span class="date">01 juillet 2025</span>
+        <h3>Lancement des cours en ligne via la plateforme...</h3>
+        <p>Découvrez les aspects de la croyances musulmane .</p>
+        <a href="La croyance musulmane (mis à jour 18_03_2023) (1).pdf" class="read-more">Lire la suite →</a>
+      </div>
+    </article>
+
+    <article class="news-card">
+      <img src="islam.png" alt="Partenariat">
+      <div class="news-content">
+        <span class="date">28 aout 2025</span>
+        <h3>decouvrez la prière dans tous ses aspects</h3>
+        <p>Du mot salat viens de la racine arabe qui signifie connection,lien en outre la salat est...</p>
+        <a href="La prière 1.pdf" class="read-more">Lire la suite →</a>
+      </div>
+    </article>
+
+    <article class="news-card">
+      <img src="islam.png" alt="Événement">
+      <div class="news-content">
+        <span class="date">28 aout 2025</span>
+        <h3>prière et purification</h3>
+        <p>Rejoignez-nous pour découvrir nos installations et rencontrer notre équipe pédagogique.</p>
+        <a href="La prière 2 .pdf" class="read-more">Lire la suite →</a>
+      </div>
+    </article>
+
+     <article class="news-card">
+      <img src="islam" alt="Événement">
+      <div class="news-content">
+        <span class="date">20 juin 2025</span>
+        <h3>bienvenue à l'ecole du jeune</h3>
+        <p>le jeune de ramadan est une prescription divine et constitue le 3eme pilier de l'islam.</p>
+        <a href="Le jeûne.pdf" class="read-more">Lire la suite →</a>
+      </div>
+    </article>
+
+     <article class="news-card">
+      <img src="https://via.placeholder.com/600x300.png?text=Événement" alt="Événement">
+      <div class="news-content">
+        <span class="date">20 juin 2025</span>
+        <h3>Événement : Journée portes ouvertes</h3>
+        <p>Rejoignez-nous pour découvrir nos installations et rencontrer notre équipe pédagogique.</p>
+        <a href="#" class="read-more">Lire la suite →</a>
+      </div>
+    </article>
+
+     <article class="news-card">
+      <img src="https://via.placeholder.com/600x300.png?text=Événement" alt="Événement">
+      <div class="news-content">
+        <span class="date">20 juin 2025</span>
+        <h3>Événement : Journée portes ouvertes</h3>
+        <p>Rejoignez-nous pour découvrir nos installations et rencontrer notre équipe pédagogique.</p>
+        <a href="#" class="read-more">Lire la suite →</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- JavaScript pour la recherche -->
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const articles = document.querySelectorAll('.news-card');
+  const article= document.querySelectorAll('.hadith')
+
+  searchInput.addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+
+    articles.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      card.style.display = text.includes(query) ? "block" : "none";
+    });
+  });
+</script>
+
+
+  </div>
+
+
+
+ <footer>
+       &copy; 2025 GERES-JSCI. Tous droits réservés.
+        <img src="inphb.png" alt="">
+    </footer>
+
+
+</body>
+</html>
